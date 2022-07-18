@@ -80,3 +80,5 @@
 ## props.children
 
 ## JSX 동작
+
+## Lifting state
