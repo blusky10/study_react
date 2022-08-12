@@ -6,6 +6,8 @@
     const element = <h1>Hello, world!</h1>;
     ~~~
 - React Component 생성을 좀더 쉽게 도와준다
+- Root JSX element 는 1개여야 한다.
+- JSX 코드는 React createElement 로 변환된다.
 - babel 은 JSX 를 Reac.createElement() 호출해서 컴파일 한다.
     ~~~
     const element = (
@@ -90,8 +92,18 @@
 - 양방향 바인딩
 
 ## React 에서 Key 가 필요한 이유
+- Map 사용시 고유한 Key 가 필요하다. 
 - React 는 상태를 메모리에 저장하고 있다가 변경된 부분만 렌더링 한다.
 - Key 값이 없으면 모든 데이터를 비교해야 하지만 Key 가 있으면 Key만 비교하면 된다.
+- ~~~
+  <ul>
+    {props.users.map((user) => (
+      <li key={user.id}>
+        {user.username} ({user.age} years old)
+      </li>
+    ))}
+  </ul>
+  ~~~
 
 ## Map 에서 index 를 Key로 하면 안되는 이유
 - 0번의 index 가 삭제되면 React 가 변경을 감지하여 리렌더링 되고 0번 부터 다시 매핑한다. 
@@ -105,3 +117,7 @@
 ## 템플릿 리터럴 : 백틱 (₩)사용
 - ES6 에서 나온 문법
 - 내장된 표현식을 혀옹하는 문자열 리터럴이다.
+  
+## 포털
+- 컴포넌트를 놓을 장소
+- 
