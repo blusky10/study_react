@@ -121,5 +121,10 @@
 ## 포털
 - 컴포넌트를 놓을 장소
 - 
+## 프래그먼트
 
+## ref
 
+## Effects
+## Reducers
+## Context
