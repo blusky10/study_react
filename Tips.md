@@ -125,6 +125,34 @@
 
 ## ref
 
+
 ## Effects
+- 리엑트 컴포넌트가 렌더링 될 때마다 특정 작업(Side effect) 를 실행할수 있도록 하는 Hook 이다.
+- Side Effect 는 컴포넌트가 렌더링 된 후에 비동기로 처리되어야 하는 부수적인 효과를 말한다.
+- 언제 실행될지 제어 할수 있다.
+- ~~~
+  import React, {useEffect} from "react";
+  ~~~
+- ~~~
+  useEffect(function, dependency [])
+  ~~~
+- dependency 가 없을 경우 컴포넌트가 렌더링 될때마다 실행된다.
+- dependency 에 빈 배열을 넣으면 최초 한번만 실행된다.
+- cleanup 함수는 useEffect 함수가 실행되기 전에 실행된다.
+
 ## Reducers
+- state 관리를 도와준다.
+- 현재 상태와 액션 객체를 파라미터로 받아서 새로운 상태를 반환한다.
+- 상태 업데이트 로직을 컴포넌트에서 분리가 가능하다.
+- ~~~
+  function reducer(state, action) {  
+    return newState;
+  }
+  ~~~
+- ~~~
+  const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
+  ~~~
+
 ## Context
+
+## 디스트럭처링
