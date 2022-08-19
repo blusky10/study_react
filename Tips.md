@@ -152,6 +152,13 @@
 - ~~~
   const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
   ~~~
+- vs useState
+  - useState()
+    - main state 관리 툴
+    - 개발 state, 데이터, 간단한 state
+  - useReducer()
+    - state 로 객체가 있을경우
+    - 연관된 state로 구성된 state 데이터를 다루는 경우
 
 ## Context
 
