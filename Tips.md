@@ -161,5 +161,10 @@
     - 연관된 state로 구성된 state 데이터를 다루는 경우
 
 ## Context
+- state 가 자주 바뀌는 경우는 적합하지 않다.
 
 ## 디스트럭처링
+
+## Hook
+- 훅은 리액트 함수에서만 호출해야 한다. (react component func, custom hook)
+- 최상위에서만 호출해야한다. 
