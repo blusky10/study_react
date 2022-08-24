@@ -168,3 +168,5 @@
 ## Hook
 - 훅은 리액트 함수에서만 호출해야 한다. (react component func, custom hook)
 - 최상위에서만 호출해야한다. 
+
+## forwardRef, useImperativeHandle
